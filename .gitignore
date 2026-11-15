@@ -1,0 +1,34 @@
+# Game body, decompile, and files rebuilt from them
+backup/
+decomp/
+build/
+
+# Built binaries and the game DLLs kept beside the patcher for local builds
+*.dll
+*.exe
+*.pdb
+*.assets
+
+**/bin/
+**/obj/
+
+# Player package. The zip is uploaded as a GitHub release, not committed.
+package/SeeNoEvil_CHS/
+package/*.zip
+tools/
+
+# Previews and one-off checks
+*.png
+test_charset.txt
+test_dialogue.txt
+test_package.ps1
+caps.py
+check_clip.py
+check_glyph.py
+compare_glyphs.py
+inspect_fonts.py
+inspect_font_detail.py
+inspect_textmesh.py
+make_test_dialogue.py
+patch/test/
+translation/orig_lines.py

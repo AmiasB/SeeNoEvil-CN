@@ -1,0 +1,159 @@
+-------
+EPI_000:2:Not quite ready for bed yet. Need to make sure all my boys get their goodnights first.
+EPI_001:5:How's the design going, Hupster?:-36:It goes well, thank you. I am looking forward to that shipment of mahogany.:5:It's supposed to be in this week. I'll have them unload it straight into my truck. :-36:Wonderful, thank you. I'd show you the design, but I would rather it were a surprise. :25:That's fine, I like surprises. Just show me when you're done.:-36:I will. You're going to love it. 
+EPI_002:20:Comfortable?:-52:Quite. If only I had known Agmago would be so pleasant a throne.:-35:I'd have been Lord Barrod's seat? How prestigious.:-52:Care to join us, Orsino? Perhaps there's a place between us that suits you?:20:You know what happens when you guys pile on me! We have to work tomorrow!:-51:Indeed. Let me know when you are ready for bed, though. I'll join you.:26:Sure. It'll just be a minute. 
+EPI_003:26:Still having fun Mags?:-35:I am! This game is interesting.:-32:The cutscenes are really long though. I want to skip them, but I'm afraid I'll miss something good.:18:I know just what you mean. 
+EPI_004:25:That pizza was awesome, Ciz.:-61:Thanks, love. Do I get a snog for it then?:18:You're such a sook. You're as bad as Boulder.:-62:What? I ain't! He's a giant blubbin' baby!:-43:I'm also right here. And I'm bigger than both of you.:23:Hey now, simmer down, I was just teasing.:2:I'll come give you your kisses before bed, Ciz.:-61:Right then. I'm not far off a proper lie-down anyway.:-43:Ciz makes fun of me and gets a kiss for it?:26:What, you think I'll forget about my big teddy bear Boulder? I'll come tuck you in too.:-42:Hmmm. I suppose it is nearly time for bed. I'll hold you to it. 
+EPI_005:2:How's the book, buddy?:-45:Absurd, yet entertaining. This girl believes she has the mental fortitude to live forever. I'd wager her sanity crumbles by year two-hundred.:11:A girl who wants to live forever? Are you reading what I think you're reading?:-43:Reserve your judgement! It was on the popular books list!:-45:Besides, it's naught but a diversion. You told me to enjoy myself, so I am reading an absurd tale.:18:Right, well I guess I still love you.:-45:Look at this face. How could you not?:20:You got me. 
+EPI_006:20:I can hear Boulder singing in the shower.
+EPI_007:2:I think Ciz kept some of those crazy coathooks as souvenirs. 
+EPI_008:2:It's late, and I am definitely in for the night. Door's locked, but Hup always double-checks it anyway.:5:Man, I pity the poor fucker who tries to break into this house. 
+EPI_009:5:This place really came together well. If it wasn't for the guys I'd probably still be fixing it up. 
+EPI_010:2:I can smell Boulder's shampoo. He goes through a lot of the stuff. 
+-------
+GEN_001:0:There's nothing here of note. 
+-------
+GET_001:15:Looks like a new one, but manscaping is not at the top of my priority list right now. 
+GET_002:2:A blade he hasn't mastered huh?:0:Orsino takes the disposable razor.
+GET_003:13:I should probably not be carrying around random things. I won't miss this anyway. 
+GET_004:11:Hmm... well I've heard that olive oil is supposed to be good for your skin, and it IS slippery. It'll have to do.:0:Orsino takes the olive oil.
+GET_005:15:A box full of thumbtacks, some carpenter's putty, pencils, the CIGAR from my sister's wedding, and a tiny screwdriver.:13:Nothing useful. Guess if I need to hang a picture or have a smoke, I'll be all set. 
+GET_006:7:Hmm, there's a CIGAR in here. That would count as smoke from my body right?:5:One way to find out!:0:Orsino takes the cigar.
+GET_007:7:You know, this is scary shit. I've had quite enough to drink for one night.
+GET_008:12:Hey great, it's still ice-cold.:2:It's a bit of a long shot but I know a beer always cools ME off.:0:Orsino takes the pack of beer.
+GET_009:5:I'm not nearly drunk enough to think that messing with bees while naked is a good idea.
+GET_010:7:Are the bees even in there, I wonder?
+GET_011:7:Well... Hup wants bugs. Bees are bugs. Let's see if there are any actually in there.:0:Orsino picks up a small rock and gets ready to run like hell.:18:Worst idea ever, go!:0:Orsino gently underhands the pebble and hits the side of the beehive.:0:...:0:....:0:....:0:After a tense moment, there are still no bees.:13:I guess the bees didn't make the jump with me. Hmmm...:12:I wonder if there's any honey in there. Maybe he'd like that instead. I should get a jar or something.
+GET_012:21:There's probably honey in there, but I don't have anything to collect it in.
+GET_013:12:Alright, let's see what we got!:0:Orsino tears the beehive off of the branch and pulls it open.:23:Jackpot!:15:I wonder why the bees didn't come through? They were closer to the palace than I was.:7:Oh well. Time to get messy.:0:Orsino squeezes a few big, gooey chunks of honeycomb into the jar. :15:Well... it's full of broken wax pieces, but it's more or less a jar of honey.
+GET_014:2:A blade he hasn't mastered huh?:0:Orsino takes the disposable razor.:13:Now, I need some shaving cream.:11:Hmm... I don't think there's any here. I wonder if I can find something to use as a substitute.
+-------
+HUP_000:0:A humungous, greasy-looking giant of a man with a head like a toad's is standing here, eyeing Orsino suspiciously.
+HUP_001:0:Hup is keeping a watchful eye on Orsino, but he seems fairly relaxed.
+HUP_002:-36:I am not interested, Mortal. Enter the palace and speak to Lord Barrod. Now.
+HUP_003:-36:What is it, Mortal?:23:Barrod says we're gonna be bros, so I figured I should at least say hello.:-36:Of course. Hello.:21:You just guard the gate, right?:-36:I do, and I destroy threats. My strength is incomparable.:5:You do look pretty strong. How come you didn't clobber me?:-36:...:-36:I suspected that Lord Barrod would desire you. I was correct.:7:Hmm, I see. Well I guess I'll look around some more.:-36:Wait, Mortal.:7:What is it?:-36:Do you know... "Bugs"?:16:...bugs?:-36:Yes. A guest to the palace long ago brought these morsels with him. He called them "Bugs" and told me they came from the mortal realm.:4:Morsels? You... ate them I suppose. I guess that's not surprising.:-36:I realize this is Limbo, but it seems that parts of it overlap with the mortal realm as well. I cannot leave my post, but if we are "bros" then you will bring me bugs if you find any.:2:Alright, well I'll keep an eye out.:-36:Very good. Thank you.
+HUP_004:5:Still workin' on that bugs thing, big guy. Nothing so far.:-36:I see. I will be patient. 
+HUP_005:-37:Nngh... what... is that smell?:5:Oh right, it's all over my hands. Is that a good "Nngh" or a bad "Nngh"?:-37:Your hands!  Show me!:0:Hup grabs Orsino by the wrists and puts them into his substantial mouth.:9:Hey, what are you doing?!:0:Hup shudders as his eyes lose focus and he sucks the honey off of Orsino's hands.:11:...:0:Hup is surprisingly gentle, and after a moment he releases Orsino. He suddenly seems terrified.:-39:W... what have I done? I... have touched you without your permission!  Ah...:0:He seems genuinely horrified.:9:W... what?  It's fine, it's just a little slobber! :-36:...what? You... won't claim thralldom? I... have violated the tenet. It is your right.:20:Naw, what use have I got for a thrall? I don't think you'd look good in a maid outfit anyway.:-36:I... do not know what to say.:20:You can start by telling me if you liked the honey.:-38:That was all the things that are wonderful about eating bugs without the bits of shell and legs getting stuck to the back of my throat.:11:How appetizing.:25:Well I've got more. A lot more.:0:Orsino shows Hup the jar full of honey.:-38:I must have it... please. A pact! I'll agree to a pact, just... promise to give it to me!:2:A pact huh? Well let me think about it.:-36:Ah... of... of course. And thank you. Your forgiveness is momentous.:18:Sure thing bro.
+HUP_006:-36:You still... have it, right? You're keeping it for me?:20:Don't worry Hupster, nobody's getting this goo but you.:-36:Ah... I can hardly stand it. Please decide soon.:25:I'm having too much fun teasing this guy.:26:I'm such a stupid bitch. 
+HUP_007:15:So Hup, earlier, when you slobbed all over my hands...:-37:Ah, forgive me. I overstepped my boundaries.:26:Oh I didn't half mind, Hup. In fact, I wouldn't mind you doing it again. Perhaps more thoroughly. In private.:-36:I don't understand.:26:Your mouth, Hup, I want you to get me off with it. Think you can do that?:-37:Ngh... I am not certain that I understand, but if that is your desire, I will accept. OFFER me the HONEY and I shall pleasure you with my MOUTH.
+HUP_008:-37:I can scarcely contain myself. Please SUMMON me to perform my task as soon as you are able!:18:Sure bud, just let me pick a good spot. 
+HUP_009:-37:Yes, Mortal, I beg of you. I want it more than anything!:23:Okay, just making sure!
+HUP_010:-36:You know you cannot change the terms of the pact, Mortal. Honour your promise and I shall honour mine!
+HUP_011:-36:I know not of what you speak, Mortal.:4:No?:-37:My head is fogged with desire. I could not have imagined such a delight could be found here. I can't stop thinking about it.:11:Okay, one-track mind. Good to know. 
+HUP_012:-36:Mortal, you know well my desire. Speak to me of yours and let us come to an agreement!:11:Right. I'll SUGGEST a few things and see what you think.
+HUP_013:-37:Yes, Mortal, I eagerly accept! Thou art beholden to me and I to thee. The pact is writ!:0:There is a sudden surge in Orsino's chest.:28:Hnngh!!:-37:I feel you in my chest as well, Mortal. The bond is sealed.:19:Alright, whew. Well that was bracing.:-38:Now, Mortal, please, choose your time and place and SUMMON me to perform my duty. I tremble with anticipation!:11:I can actually feel that through the pact, huh. I mean even if I couldn't see you trembling.:11:Which I can.:-37:Do not mock me, my weakness is your doing!:20:Relax Hupster, I'll make good. Just let me go find a quiet corner and we'll get the party started.:-37:Please, go at once!
+HUP_014:-36:Yes, Mortal, I have agreed and I shall perform. I hope you shall be satisfied. :26:You'll do fine. Let me go find us a quiet place to... get things started.
+HUP_015:-36:You desire a pact then? I may consider it if you can locate bugs for me.:5:Well I guess that gives me someplace to start.
+HUP_016:-36:A pact? I think not. There is nothing that you could offer which I desire.:4:Ouch.:-36:Though... hmm... perhaps there is one thing. Let us speak. 
+HUP_017:-36:Um... hello again, Mortal. :26:Hey big guy. I'd ask how you're feeling, but I can still feel you through the pact.:19:Though... is it my imagination or does that feel a little stronger than it did before?:-37:It... is not your imagination. I feel it as well. Our link has intensified, and I am unsure what to do.:21:Unsure what to do? What's there to do?:-37:I feel at once thrilled and terrified. Part of me demands severance, but...:-36:Yet another part revels in the flow of positive energy. Your energy. I do not want it to stop.:13:"Positive Energy", huh?:25:We just call that "feeling good".:-36:I see. Well... I have never... felt good in this fashion before. Thank you, Orsino.:2:You're welcome.:9:...wait, how did you know my name? You never asked me, and I'm pretty sure I never volunteered it.:-37:Strange. I... do not know. Perhaps the bond revealed it to me.:19:...hmmm, maybe.:-36:In any case, I am pleased that you will be staying here with us. Your... attention... is most appreciated.:23:Thanks, Hup. I'll... see you later.
+HUP_018:-37:Orsino.:0:Hup relaxes visibly and gives Orsino something resembling a smile.:5:Heya Hupster. How goes gate duty?:-36:It is dull and senseless in a place like this, but focusing on our bond gives me peace and patience.:18:I see. :0:Orsino leans close to Hup and gives him a quick hug about the waist. Hup doesn't reciprocate it, but neither does he resist.:23:See you around Hup. :-36:Farewell for now, Orsino.
+HUP_019:-36:Our pact is satisfied, but our bond lingers. :21:So... when I die, what will happen?:-36:I have no claim to thralldom any longer. Our bond will simply... fade.:19:I see. And if I want another one? :-37:Another pact must be writ with another demon. Our deal is sealed in the ink of our entwined existence, and it cannot be changed.:5:Well, as long as we're in the clear! Thanks, Hup, that was fun.:-37:...twas.
+HUP_020:-36:Ah, Orsino. I was just thinking about you. :5:You were?:-37:I was. Something... occurred to me. Something about the honey you gave me.:9:Oh, wasn't it good?:-36:Twas indeed, and I am saddened that it is gone, but I realized that I have only ever tasted it upon your body.:2:Oh, I guess that's true. You sad you didn't get a more pure experience?:-37:That... isn't exactly it. I...:0:Orsino feels a pulse of apprehension through Hup's pact.:-37:Orsino. Permit me to taste you. For a brief moment, please!:20:You horny toad! Should we go somewhere private? :0:Hup grabs Orsino in his arms and lifts him clean off the ground. He drags his tongue slowly from Orsino's inner thigh to his chin, sparing no obstacle along the way.:30:Ngh... Hupster, if you don't stop that right now I'mma make you blow me again.:0:Hup gently sets Orsino back down and wipes his mouth with his forearm.:-37:It... is as I thought. It's not quite the same, but part of the taste was in fact you. :20:I taste almost as good then? I choose to take that as a compliment. :-36:As you should. I hope you will permit me to indulge often. I am sure Lord Barrod will not mind. :11:Right, eternal servitude. Well there goes that boner.:-36:Ah, you need not worry. Agmago, Boulder, and I are also bound to Lord Barrod. He is clever and generous, and you will not be unhappy.:7:That's what he keeps saying.:19:I'm going to try to get my thoughts in order before I rush off to SUBMIT to Barrod.:-36:Of course, Orsino. If you have need of me, I am at your disposal.
+HUP_021:-36:Orsino? :2:Yeah, Hupster? What's up? :-37:What is "snoggin'"?:18:That sounds like something Ciz would say. Are you guys talking about me behind my back?:-37:Ah... is that inappropriate?:5:If I was a bitch I'd give you hell, but I'm not so I won't. "Snoggin'" as you say, is kissing. :-36:...kissing?:4:Oh. Hmm... explaining kissing. Well...:20:What you did to me earlier was kind of like a kiss. Like... putting your lips and mouth on somebody. Usually on their mouth.:-37:I... see. I think.:18:You want me to kiss you?:-36:Oh! No! I... um... no, that's fine, I was merely curious.:20:Sure, sure. If you change your mind, I'll save one for you.
+HUP_022:2:Hey Hup. Anything moving out there?:-36:Not a thing. In Limbo, I would not expect there to be.:4:At some point isn't it better to just close the gate and screw it?:-36:Indeed. For the time being it is better that I can observe the edges of our floating domain, but once I am sure of our safety I will close the gate. 
+HUP_023:19:So Hup, are there other toad-demons like you?:-36:Toad-demons?:11:Oh... sorry, I guess that was rude.:12:There's this animal we have on Earth called a toad, and you look a lot like them, so I just assumed there was some connection.:-36:This toad is surely an impressive and powerful creature.:13:Oh, yeah they... can do... stuff...:-37:They're tiny and insignificant, aren't they?:15:Dammit, stupid pact. I was trying to shield your dignity.:-36:It is fine. I do not think there is any connection. If anything it is a small wonder I resemble an earthly creature at all. There exist some demons that would be... difficult for you to behold.:21:I hope I don't have to.:-36:You shan't.
+HUP_024:11:So can I talk about those things or is it off-limits?:-36:What things?:7:You know, your spunk, your cumquats. I don't know what they're really called. Those things you squeezed out when we fucked. :-37:Oh, those. We... can speak of them if you wish. What is your question?:21:Is there a better word for them?:-37:Ah... I do not have a word. I seldom see them, and wasn't sure that they would... ah... emerge.:11:Right. You can't get them out without a mortal can you?:-37:No, short of Ciz carving into me and plucking them out.:-37:It is much different from the product of your body. I have... disgusted you.:23:No, no, nothing like that. I just wasn't sure if it was normal for you, I guess.:5:It didn't hurt or anything though right? It felt good when you blew 'em out?:-37:...tremendously. :20:Good enough.
+-------
+ITE_000:0:It's a cheap, disposable razor. It's brand new and still has the little plastic cap on the end. 
+ITE_001:0:It's a half-full bottle of extra-virgin olive oil. It's well-used so the label is a little bit greasy.
+ITE_002:0:Six frosty cans of beer just itching to be cracked open.
+ITE_003:0:This cigar is a few years old. It's very dry and smells quite nice. 
+ITE_004:0:It's a clean, empty jar taken from the kitchen of Barrod's palace. It has a tight-fitting lid. 
+ITE_005:0:The jar is full of a chunky goo of raw honey and broken bits of beeswax. 
+ITE_006:0:It's one of the "cumquats" Hup ejaculated. It's waxy, smooth, warm, and full of his semen.
+ITE_007:0:Orsino has forged a pact with the demon named Ciz. Focusing on it gives Orsino a light pin-prick sensation in his chest. 
+ITE_008:0:Orsino has forged a pact with the demon named Boulder. Focusing on it gives Orsino a heavy throbbing sensation in his chest.
+ITE_009:0:Orsino has forged a pact with the demon named Hup. Focusing on it gives Orsino a cold, wet sensation in his chest. 
+ITE_010:0:Orsino has forged a pact with the demon named Agmago. Focusing on it gives Orsino a burning sensation in his chest. 
+ITE_011:0:Orsino shares a powerful bond with the demon named Ciz. A sense of trust and fellowship radiates from it. 
+ITE_012:0:Orsino shares a strong bond with the demon named Boulder. A sense of strength and determination radiates from it. 
+ITE_013:0:Orsino shares a close bond with the demon named Hup. A sense of of patience and admiration radiates from it.
+ITE_014:0:Orsino shares a special bond with the demon named Agmago. A sensation of warmth and affection radiates from it. 
+-------
+LOC_001:0:It's immediately obvious that something is terribly wrong here.:0:The walls are crumbling, the floorboards are twisted, and the structure curls and folds in on itself in ways that make no sense.:0:The house is engulfed in an oily black fire, yet there is no heat or smoke.:4:I... I've gotta be dreaming, or really high or something. What the fuck?
+LOC_002:0:Orsino's house is an absolute wreck.
+LOC_003:0:The front door has been blown clean off its hinges.
+LOC_004:0:The coat hooks are twisted into jagged blades.:16:Yikes!
+LOC_005:0:The bathroom is curled up and everything is broken. The tub is full of water, despite it being on the wall. 
+LOC_006:0:The strange nauseating black fire licks at the edges of the bathroom.
+LOC_007:9:Is that blood coming out of the outlet?
+LOC_008:0:The fridge is balanced upside-down on its corner, but the light is still on and it appears to be working.
+LOC_009:0:The drawers here are about the only thing in the kitchen that still look normal.
+LOC_010:0:The fridge is balanced upside-down on its corner, but the light is still on and it appears to be working.:0:There's a six pack of beer inside. 
+LOC_011:16:Well that's a pretty weird-looking blade, but... I don't think I can get it off the wall and still have all my fingers. 
+LOC_012:19:Come to think of it I am pretty sure he had something like that one already.:18:I think I got this one though.
+LOC_013:17:|0|.....:8:|0|Ah crap, I passed out outside. I must've had a hell of a lot to drink.:13:|0|I don't even remember drinking at all. Man I must be sloshed.:23:|0|Well I don't feel like barfing so that's a plus! Better get to bed and sleep it off. :0:Use the left and right arrow keys to move. Use up and down to inspect or interact with the environment, and to advance dialogue. Press the ? to repeat a message.:0:You can skip whole conversations with END or PGDN, but you might miss something interesting!:0:Use the number keys 1 - 4 to save your game. Use -/+ to adjust music volume and [/] to adjust sound effect volume. EXIT or QUIT to return to the title page.:0:If Orsino stands still and has a second to think, he sometimes learns things he otherwise wouldn't. Try it!
+LOC_014:16:Okay, okay... I should probably go to the neighbor's house to get HELP.:11:Showing up naked in the middle of the night, I'm sure they'll be thrilled. 
+LOC_015:0:It's a beautiful night, and there's a warm breeze drifting between the trees.
+LOC_016:0:Orsino's house is there, just up the driveway. 
+LOC_017:0:The neighbor's driveway starts here. 
+LOC_018:18:I must've got turned around. This is the neighbors' driveway. My house is the other way.
+LOC_019:0:Black flames have engulfed most of Orsino's house.:9:Is... is that my truck up there?
+LOC_020:0:There is a distorted, imposing structure at the far end of the driveway.
+LOC_021:0:There is a warm breeze, but something about how it smells is strange. The trees don't move at all. 
+LOC_022:9:Holy crap, their house is messed up even worse than mine!:3:I gotta make sure they're okay!
+LOC_023:16:What the...:21:|1|Okay this is a dream for sure.:-36:|1|A mortal? Interesting. We must be closer than we thought.:9:|1|If I'm a mortal, then what the fuck are you?!:-36:|1|I am called Hup, but that is not important. You stand before the palace of the Demon Lord Barrod, and will present yourself to him at once.:11:Um... right. I'll get right on that. 
+LOC_024:0:There's a large, twisted gate leading back toward the forest path. 
+LOC_025:0:The yard is surrounded with a giant, imposing fence, and the grass is twisted and growing in strange patterns.
+LOC_026:0:The giant, twisted building looms high above the dark treeline. There are two braziers burning with black, oily fire.
+LOC_027:0:There is a thick tangle of thorny vegetation extending in this direction.
+LOC_028:0:There's a path into the thicket.
+LOC_029:-36:Stay yourself Mortal, or I shall restrain you.:16:Please don't.:-36:Enter the palace and present yourself to Lord Barrod immediately.
+LOC_030:5:Okay, it's just a creepy demon lord castle... nothing to be worried about right?:11:I am so fucked.
+LOC_031:-52:A mortal? I thought I smelled something interesting. Come to me.
+LOC_032:-56:Am I not pleasant upon your mortal eyes?:13:Well... erm...:-51:You cannot escape. Come.
+LOC_033:0:A heavy set of double doors leads to a dimly-lit room off the throne room. It seems important.
+LOC_034:0:The room is a chaotic mess of erotic sculpture and expensive-looking fabrics.:0:Lord Barrod sits at the centre of the room, eyeing Orsino wickedly.
+LOC_035:0:Priceless fabrics are thrown into a pile around the throne, with plush pillows scattered about.:0:Barrod sits atop it all, amusedly stroking his chest. 
+LOC_036:9:Wow, that's rather... well... :4:I suppose in a place like this it fits right in. 
+LOC_037:0:A torchlit hallway extends in this direction.
+LOC_038:0:This archway leads back to the front gate, where Hup is keeping watch.
+LOC_039:1:Is everything in here like... Persian silk or something? This shit is really nice.:-52:Lay yourself upon it if you wish.:9:Oh... um... maybe later.
+LOC_040:18:I kinda want to touch it.:0:Orsino reaches over stealthily and touches the statue's prominent erection.:23:It's hard as a rock. Haw!:-52:Curious.:11:...:-51:...:15:Okay now it's just awkward. 
+LOC_041:0:The kitchen is in pretty tight order, considering it is a demon lord's kitchen.:0:There is a downtrodden thrall tending to a pot in the fire, and a double door on the far end of the kitchen.:0:The thrall glances up for a moment, but promptly returns to his task. 
+LOC_042:0:This large double door leads back into the hallway.
+LOC_043:0:The library is even quieter than the rest of the castle.:0:The silence is punctuated with the occasional deep breath and the sound of a tail dragging heavily against the carpet.
+LOC_044:0:The door closes with a gentle click and Orsino finds himself in the castle's library.:0:There is an enormous horned demon on the far side of the room, leering at Orsino with unrestrained amusement.:11:Well, this room would be entirely un-creepy if I didn't suddenly feel like I were being visually dissected. How about that.:-41:Approach, Mortal. Fear not.:13:Right. 
+LOC_045:0:This shelf is loaded with old-looking books, but none of the bindings are legible. 
+LOC_046:0:This shelf is positioned very prominently, and covered with well-kept books and trinkets, but all of the text is in a strange, illegible script.
+LOC_047:0:There is a lectern here with a book spread open, but none of the text makes any sense. 
+LOC_048:0:The shelves of books extend deeper into the labyrinthine library.
+LOC_049:0:A spiral staircase curves upward around a huge stone pillar.
+LOC_050:0:This bookshelf is loaded with ancient books, mostly detailing history and the nature of demons. 
+LOC_051:0:This shelf has a lot of books about mortals and the realms.
+LOC_052:0:This important-looking book is purposefully left open to a page detailing some kind of ritual.
+LOC_053:0:The ritual for traversing Limbo is detailed in this tome.
+LOC_054:0:The small room is laid out in a very purposeful fashion. Scattered about are various implements, evidently meant for causing a great deal of pain. It seems to have been cleaned recently. :3:Right... demon castle. I shouldn't be surprised to find stuff like this. :16:I'm sure that anybody who ended up here was a bastard to start with. :11:A bastard like me...
+LOC_055:0:This door leads back out toward the Eyrie. 
+LOC_056:21:Okay, there's... some swirls. That's cute. I... uh... :7:I have no idea what this is. 
+LOC_057:15:This room is called the "Vortex of Howls". It appears to be a ritual room for extracting energy from the... lucky guest. :17:Man there are so many hunks around that it's easy to forget this is a demon lord's castle.
+LOC_058:0:This small room looks like it's been cleaned recently, and there are assorted painful-but-not-lethal implements scattered about. Clearly this is some kind of torture room.
+LOC_059:0:There is some kind of diagram on the wall here. 
+LOC_060:15:The Vortex of Howls. This room is one of the ritual rooms I need to empower! Let's see...:15:Power coaxt from throat alive by infernal wrath seald avex cantus FULMINUS.:7:So basically in order to make the incantation work, a mortal screams to fuel it, and it sounds like the screams have to be "coaxed out" by a demon. :11:Well the only mortal around here is me, so I have to get a demon to make me scream. How fun.:15:I'll also need to memorize FULMINUS after I'm done. That's probably in the ritual book.
+LOC_061:0:This small room is quite clean. There are pots and jugs lining the corners, and some sort of large dish in the centre. :0:The room has a distinctly sharp, metallic smell. 
+LOC_062:0:This room is clean, but there is an oddly familiar smell in the air.
+LOC_063:0:This door leads back out toward the lavish court area.
+LOC_064:11:There's something in these jugs, and if my nose is any good, I'd say it's blood. I'm not going to mess with that.
+LOC_065:7:Oh look it's some... line... thingies.:15:I can't make any sense of this.
+LOC_066:21:This room is called the "Thalamum Vitae". It looks like this room is meant for some kind of ritual bloodletting.:11:Guess that explains the smell, and the gads and gads of blood in the pots. 
+LOC_067:15:This is the Thalamum Vitae, and it looks like it's one of the ritual rooms I am supposed to dick around with. Hmm...:15:Power runneth of mortal humour let by infernal will seald avex cantus SOLVUS.:19:Well this seems straightforward. Before the incantation will work, a demon is supposed to "spill my humours" in this room.:20:I wonder how particular the ritual is? Does it have to be blood, or will any bodily fluid do? I should try to get one of the demons to give me a BLOWJOB in here.:20:Even if it doesn't work it's not like it would hurt anything.:13:Also, I'll need to go and memorize SOLVUS from the ritual book afterwards.
+LOC_068:0:This hallway leads back toward the dungeon.
+LOC_069:0:The countertop here looks like a food preparation area. There is a large slab of meat and a cleaver.
+LOC_070:0:An emaciated thrall stands here, tending a pot in the fire. He's clearly noticed Orsino, but he does not attempt to speak.
+LOC_071:0:There is a large pot of what is presumably stew cooking in the open flame. 
+LOC_072:0:This appears to be a simple basin for water. 
+LOC_073:0:This corner appears to be dedicated to the storage of foodstuffs.
+LOC_074:0:This heavy double door is closed, but doesn't appear to be locked. 
+LOC_075:0:These double doors lead to the Immolatorium. 
+LOC_076:0:This small room looks like it was scrubbed recently, but the floor and ceiling are charred black, and there is a pungent smell of charcoal in the air. 
+LOC_077:0:This room reeks of charcoal, and is burned black at the centre. A large jug of oil sits in the corner.
+LOC_078:0:There is some kind of diagram on the wall here. 
+LOC_079:0:This door leads back into the kitchen. 
+LOC_080:0:This archway bridges the path leading back to the front gate. 
+LOC_081:0:Agmago stands here, watching Orsino casually. His body heat radiates outward forcefully, and the plants have withered in a circle around him.:0:He appears to be attempting to stand still so as not to damage more of them.
+LOC_082:0:There are several very large, curiously-shaped flowers here. Some of them are oozing a thick, slimy substance.
+LOC_083:0:This door appears to lead down into a burrow or cellar. 
+LOC_084:0:The garden is lush with unusual plantlife. Gnarled, thorned vines twist through the dirt, and bushes with leaves like blades grow along the path.
+LOC_085:0:Orsino steps into the garden to see a powerfully-built demon standing here, wreathed in vigorous flames.:0:|4|The demon notices Orsino immediately, but seems calm, and makes no move to approach.:16:|4|Oh... um... hello. How's it going? I... erm...:-31:|4|Mortal. I heard your earlier discourse with Hup. You are our guest, are you not?:15:|4|So I'm told.:-31:|4|It has been long since we have entertained. I am called Agmago. Come closer, Mortal, that we might speak more easily.:4:Well, this guy looks like what I'd expect a demon to look like, but he's awfully polite. I'm sure it'll be fine.
+LOC_086:0:Agmago catches Orsino's eye for a moment. :2:Hmm. I can feel him watching me through the pact. It should be creepy but for some reason it... isn't.
+LOC_087:0:At the bottom of the stairs is a large brick room with assorted implements for restraint. :0:Although it is clearly a dungeon, it is currently empty, and has been thoroughly cleaned.:0:At the far end of the room is a man wearing a leather executioner's hood. He looks human, but his eyes are points of hellish light.:-46:Well, would you look at what come crawlin' in. Hello, little pup.:21:Okay, I was not expecting that. You're not nearly as proper as everybody else I've met.:-47:And what, you gonna lecture me on me dictation then?:-46:Cuz if you think you got a problem with me now, I could introduce you to a whole new level a problems.:16:Oh... um... no that's fine, you're fine. Everything's fine. :-46:Good. Anyway, me name's Ciz. You need something you just come say hello. I love meeting new people. Makes my job interesting.:10:Say hello. Right. 

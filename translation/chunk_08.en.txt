@@ -1,0 +1,40 @@
+SUM_008:2:Still smells like smoke in here. But you know, kinda nice smelling and not charred flesh smelling like before.:11:I hope that'll count.
+-------
+THR_000:23:Hey there buddy. You aren't a demon, are you?:-58:...no. I am human, or at least I was, long ago. I have toiled for Lord Barrod for an age greater than man is meant for.:11:He doesn't like... give you a break or anything?:-58:What would be the purpose? I am as timeless and tireless as he. There is only servitude, penance for a bond unhonoured.:13:Bond unhonoured?:-58:I held a pact with Lord Barrod when I was still a man, but fate cruelly ended my life before I could complete my obligation.:-58:As per the terms of the pact, I must now serve Lord Barrod for his entire existence.:16:But... Barrod doesn't age does he? Doesn't that mean you have to serve forever?:-58:It does.:19:Dude, ouch. It really sucks to be you.:-58:...it does.
+THR_001:-58:Unless you've something important, please leave me to my duty. I do not wish to disappoint Lord Barrod.
+THR_002:2:Hey bud, what are you doin'? :-58:I must ensure the court is ready to receive more guests. Lord Barrod will surely have need of it.:0:The thrall gives Orsino a look that is both furious and helpless.:11:Sorry, I guess... you're a slave aren't you? Maybe I can find a way to get you out of here.:-58:Do not waste your effort on me, child. There is but one escape for me.:-58:Were I but a thrall of Master Ciz instead...:13:Ciz? Why would you want to be his thrall instead of Barrod's?:-58:Ciz offered every last one of his thralls for sacrifice.:16:That's awful!:-58:Is it though? After centuries of servitude, sacrifice is the only release left for a thrall.:-58:The scent of oblivion is a sweet one indeed. :17:...I see. I'm sorry. :-58:Save your pity for yourself. Soon, you'll crave oblivion as well. 
+THR_003:-58:Do not distract me from my duties, child.
+THR_004:2:Hey there.:-58:You. I heard Master Hup from here. What do you think you're doing?:4:Excuse me?:-58:The longer you stay, the longer you risk falling for their tricks! Then you'll be like me! You must not let that happen!:11:Calm down buddy, really. I mean, I'm going to try to get out, yeah, but for the time being I'm fine.:-58:Destroy yourself if you must, but do not allow yourself to be enthralled!:9:Is it that bad? :-58:You cannot imagine. Born as a man and descending into a semi-existence between demons and men. I crave nothing more than obliteration.:19:Damn, that's harsh.:-58:Go! Every moment wasted on me is a moment your chance may escape you!:11:Alright, alright, I'm going!
+THR_005:-58:You must do your best to escape this place. Have no pity. Do not look back.:17:...Right. 
+THR_006:-58:Stay away from Barrod, you fat cow!:22:Hey! How'd you like a fat backhand, beanpole?:-58:Do it! Hurt me! I dare you!:14:Ugh, fuck it. You aren't worth the cracked knuckles.:-58:You see? You don't even have what it takes to stand beside Barrod! He's mine, and if you know what's good for you, you'll back off!:10:Right, very intimidating. What are you going to do, stab me with your ribs?:13:Besides, I'm not... gunning for Barrod or anything, I just want to go home.:-58:You... aren't trying to seduce my beloved Lord Barrod?:20:Well he IS pretty hot... :23:But no.:-58:Ah... I... spoke poorly then.:13:You didn't have to go straight for my weight though. You have any idea how much I got teased when I was little?:-58:Ugh, alright, I'm sorry! Are you happy?:15:Help me leave and I'll be happier.:-58:Yes, yes! And then you'd be gone, and Barrod will be all mine! :13:All yours. I'm sure he's touching himself in your honour right now.:-58:If... I think of anything useful I'll tell you.:11:...thanks. Moving on. 
+THR_007:-58:I... I had something important to tell you, but... I've forgotten it. :11:That's... encouraging.:-58:It's so hard to hold... my thoughts in order. I just slip back to him... to my wonderful, beautiful Barrod.:13:Well I'll just go. If you remember later, tell me. 
+THR_008:-58:...always cleaning up after Master Hup...:-58:...too much slobber...
+THR_009:-58:...seems right but it isn't...:-58:...need to reverse it all...
+THR_010:-58:...can TOUCH nothing at all...:-58:...how lonely you must be...
+THR_011:-58:...wanted to be with them...:-58:...lucky to belong to Master Ciz...
+THR_012:-58:...one more step toward the light...:-58:...back home toward the bright skies of earth...
+THR_013:-58:...what it means...:-58:...the last thing...:-58:...PORTAS... PORTAS...
+THR_014:-58:...means something entirely different when it's backwards...:-58:...definitely doesn't want that...
+THR_015:-58:...SUBMIT...:-58:...no choice but to SUBMIT...
+THR_016:0:As Orsino emerges from the Thalamum Vitae, the thrall is just returning Hup's pillow to the pile. He notices Orsino and gives him the stink-eye from hell.:11:It's... ah... nice day we're having eh? :15:Here in Limbo. :15:Where there's no weather. :15:Yeah I'll just go.:-58:Do so.
+-------
+COM_001:0:Orsino will examine his surroundings if you use the up arrow key, so there's no need to use a text command for looking. You can EXAMINE or LOOK at an ITEM in your inventory to get more information on it.
+COM_002:0:Orsino can execute obvious interactions like taking things, talking, or using doors by using the down arrow.
+COM_003:13:Nope.
+COM_004:0:To save your game, simply press one of the number keys from 1 - 4. Your game will be saved in that slot. 
+COM_005:0:You cannot reload progress in-game. If you wish to load a save file, use the text command EXIT or QUIT.
+COM_006:0:Use the left and right arrow keys to move. Use up and down to inspect or interact with the environment, and to advance dialogue. Press the ? to repeat a message.:0:You can skip whole conversations with END or PGDN, but you might miss something interesting!:0:Use the number keys 1 - 4 to save your game. Use -/+ to adjust music volume and [/] to adjust sound effect volume. EXIT or QUIT to return to the title page.:0:If Orsino stands still and has a second to think, he sometimes learns things he otherwise wouldn't. Try it!
+COM_007:0:Trying to repeat an incantation? Orsino can only remember one incantation at a time, and not for very long.:0:Go back to the lectern and RESEARCH your chosen incantation.:0:Move to the room where you wish to repeat the incantation, and press the ? key.:0:If Orsino speaks, is spoken to, examines anything, or is otherwise distracted before repeating it, he WILL FORGET and you'll need to research again. 
+COM_008:0:This door is locked. I could probably open it if you got the full version of See no Evil from Bigfingers.ca/SNE
+-------
+CIN_001:10:|0|This is a test for the cinematics.:-5:This is the second page of the cinematic test. 
+-------
+DEB_001:-46:Ciz.
+DEB_002:-36:Hup.
+DEB_003:-31:Agmago.
+DEB_004:-51:This is Lord Barrod. He looks like a right bastard, but his hair looks soft and foofy, and he smells like pure sex, but before it gets into stank territory.
+DEB_005:-41:Boulder.
+DEB_006:11:I don't know how to SHOW that.
+DEB_007:15:As if I have a choice. That's already showing. 
+DEB_008:15:I suppose if I wanted to be a little less modest, that's how I would do it. 
+DEB_009:-58:Thrall.
