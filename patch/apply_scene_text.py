@@ -17,7 +17,7 @@ CREDITS_EN_PARTS = {
     "Playtesters": "测试玩家",
     "Music \r\n": "音乐\r\n",
     "Special Thanks to Casey Johnson \r\nI couldn't do any of this without you. \r\nMuch love. ":
-        "特别感谢 Casey Johnson\r\n没有你，这一切都不可能实现。\r\n爱你。\r\n\r\n中文汉化\r\n玩家自制汉化补丁",
+        "特别感谢 Casey Johnson\r\n没有你，这一切都不可能实现。\r\n爱你。\r\n\r\n中文汉化\r\n已授权，由 AmiasBerner（狼因夜北）制作",
 }
 
 SIMPLE = {

@@ -38,4 +38,4 @@ See no Evil 简体中文汉化补丁
   源代码：https://github.com/jmacd/xdelta-gpl
 - 思源黑体 Source Han Sans：Copyright Adobe，SIL Open Font License 1.1
 
-原作版权归 Geremy Walker / Bigfingers.ca 所有。本补丁为玩家自制的非官方汉化，请支持正版。
+原作版权归 Geremy Walker / Bigfingers.ca 所有。本补丁已获作者授权，由 AmiasBerner（狼因夜北）制作。请支持正版。
