@@ -71,7 +71,7 @@ public static class SNE_CN
 		new string[] { "ORAL", "口活" },
 		new string[] { "SUCK", "吸", "舔" },
 		new string[] { "MOUTH", "嘴巴", "嘴" },
-		new string[] { "TOUCH", "触碰", "抚摸", "触摸", "摸" },
+		new string[] { "TOUCH", "触碰", "碰触", "抚摸", "触摸", "摸" },
 		new string[] { "HUG", "拥抱", "抱抱" },
 		new string[] { "HOLD", "抱住", "抱" },
 		new string[] { "CUDDLE", "搂抱", "依偎" },
