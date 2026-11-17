@@ -1,7 +1,8 @@
 """Translate TextMesh default texts baked into scene files.
 
-Usage: python apply_scene_text.py <output data dir>
-Reads the backed-up scenes and writes translated copies into the output directory.
+Usage: python apply_scene_text.py <output data dir> [source data dir]
+Reads the source scenes and writes translated copies into the output directory.
+The source defaults to the old-version backup.
 """
 import os
 import sys
@@ -43,9 +44,11 @@ def translate(text):
     return None
 
 
-def main(out_dir):
+def main(out_dir, source_dir=None):
+    source_dir = source_dir or BACKUP
+    os.makedirs(out_dir, exist_ok=True)
     for name in FILES:
-        env = UnityPy.load(os.path.join(BACKUP, name))
+        env = UnityPy.load(os.path.join(source_dir, name))
         changed = 0
         for obj in env.objects:
             if obj.type.name != "TextMesh":
@@ -62,4 +65,4 @@ def main(out_dir):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else None)

@@ -48,7 +48,8 @@ def main():
     with open(charset, "w", encoding="utf-8") as f:
         f.write(text)
 
-    run(sys.executable, "build_font.py", charset, os.path.join(BUILD, "sharedassets0.assets"), os.path.join(BUILD, "atlas_preview.png"))
+    run(sys.executable, "build_font.py", os.path.join(WORK, "backup", "sharedassets0.assets"),
+        charset, os.path.join(BUILD, "sharedassets0.assets"), os.path.join(BUILD, "atlas_preview.png"))
     run(sys.executable, os.path.join("patch", "apply_scene_text.py"), BUILD)
 
     shutil.copy(os.path.join(BUILD, "sharedassets0.assets"), DATA)

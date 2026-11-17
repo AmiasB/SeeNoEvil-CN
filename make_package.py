@@ -1,8 +1,8 @@
-"""Build the distributable Chinese patch (no original game files included).
+"""Build the player folder. It sits beside See_No_Evil.exe; the bat is run from inside it.
 
 python make_package.py
-Modified original files ship as xdelta3 diffs against the player's own copy; only
-new files (translated dialogue, helper DLL) ship in full.
+Two xdelta sets are packed: the previous Unity 4.1 build, and the current
+DRM-free build sold on the official site. The installer picks by the original DLL.
 """
 import hashlib
 import os
@@ -12,23 +12,36 @@ import zipfile
 
 WORK = os.path.dirname(os.path.abspath(__file__))
 BACKUP = os.path.join(WORK, "backup")
-GAME_DATA = r"e:\T File\SNE_FULL\See_No_Evil_Data"
+DRM = r"e:\T File\SNE_FULL_DRM_FREE\See_No_Evil_Data"
 XDELTA = os.path.join(WORK, "tools", "xdelta3-3.1.0-x86_64.exe")
 OUT = os.path.join(WORK, "package", "SeeNoEvil_CHS")
-ZIP = os.path.join(WORK, "package", "SeeNoEvil_汉化补丁.zip")
+CN = os.path.join(OUT, "cn_patch")
+ZIP = os.path.join(WORK, "package", "SeeNoEvil_CN.zip")
 
-PATCHED = {
-    "See_No_Evil_Data/sharedassets0.assets": "sharedassets0.assets",
-    "See_No_Evil_Data/Managed/Assembly-CSharp.dll": "Assembly-CSharp.dll",
-    "See_No_Evil_Data/mainData": "mainData",
-    "See_No_Evil_Data/level2": "level2",
-    "See_No_Evil_Data/level3": "level3",
-    "See_No_Evil_Data/level4": "level4",
-    "See_No_Evil_Data/level7": "level7",
-    "See_No_Evil_Data/level8": "level8",
+# name -> (original, patched) for each supported build
+FILES = ["Assembly-CSharp.dll", "sharedassets0.assets", "mainData", "level2", "level3", "level4", "level7", "level8"]
+VARIANTS = {
+    "old": {
+        "Assembly-CSharp.dll": (os.path.join(BACKUP, "Assembly-CSharp.dll"), os.path.join(WORK, "build", "old", "Assembly-CSharp.dll")),
+        "sharedassets0.assets": (os.path.join(BACKUP, "sharedassets0.assets"), os.path.join(WORK, "build", "sharedassets0.assets")),
+        "mainData": (os.path.join(BACKUP, "mainData"), os.path.join(WORK, "build", "old", "mainData")),
+        "level2": (os.path.join(BACKUP, "level2"), os.path.join(WORK, "build", "old", "level2")),
+        "level3": (os.path.join(BACKUP, "level3"), os.path.join(WORK, "build", "old", "level3")),
+        "level4": (os.path.join(BACKUP, "level4"), os.path.join(WORK, "build", "old", "level4")),
+        "level7": (os.path.join(BACKUP, "level7"), os.path.join(WORK, "build", "old", "level7")),
+        "level8": (os.path.join(BACKUP, "level8"), os.path.join(WORK, "build", "old", "level8")),
+    },
+    "new": {
+        "Assembly-CSharp.dll": (os.path.join(DRM, "Managed", "Assembly-CSharp.dll"), os.path.join(WORK, "build", "drm", "Assembly-CSharp.dll")),
+        "sharedassets0.assets": (os.path.join(DRM, "sharedassets0.assets"), os.path.join(WORK, "build", "drm", "sharedassets0.assets")),
+        "mainData": (os.path.join(DRM, "mainData"), os.path.join(WORK, "build", "drm", "mainData")),
+        "level2": (os.path.join(DRM, "level2"), os.path.join(WORK, "build", "drm", "level2")),
+        "level3": (os.path.join(DRM, "level3"), os.path.join(WORK, "build", "drm", "level3")),
+        "level4": (os.path.join(DRM, "level4"), os.path.join(WORK, "build", "drm", "level4")),
+        "level7": (os.path.join(DRM, "level7"), os.path.join(WORK, "build", "drm", "level7")),
+        "level8": (os.path.join(DRM, "level8"), os.path.join(WORK, "build", "drm", "level8")),
+    },
 }
-REPLACED = {"Assets/TEXT DOCS/GENERIC_DIALOGUE.txt": os.path.join(WORK, "build", "GENERIC_DIALOGUE.txt")}
-ADDED = {"See_No_Evil_Data/Managed/SNE_CN.dll": os.path.join(WORK, "patch", "SNE_CN.dll")}
 
 
 def sha1(path):
@@ -39,28 +52,49 @@ def sha1(path):
     return h.hexdigest()
 
 
-def win(rel):
-    return rel.replace("/", "\\")
+def utf8_bom(path, text):
+    with open(path, "w", encoding="utf-8-sig", newline="\r\n") as f:
+        f.write(text)
 
 
 def main():
-    shutil.rmtree(OUT, ignore_errors=True)
-    os.makedirs(os.path.join(OUT, "patch", "files"))
-    shutil.copy(XDELTA, os.path.join(OUT, "patch", "xdelta3.exe"))
+    if os.path.isdir(OUT):
+        shutil.rmtree(OUT)
+    os.makedirs(CN)
+    shutil.copy(XDELTA, os.path.join(CN, "xdelta3.exe"))
+    shutil.copy(os.path.join(WORK, "patch", "SNE_CN.dll"), os.path.join(CN, "SNE_CN.dll"))
+    shutil.copy(os.path.join(WORK, "build", "GENERIC_DIALOGUE.txt"), os.path.join(CN, "GENERIC_DIALOGUE.txt"))
 
-    for rel, backup_name in PATCHED.items():
-        original = os.path.join(BACKUP, backup_name)
-        modified = os.path.join(GAME_DATA, *rel.split("/")[1:])
-        delta = os.path.join(OUT, "patch", os.path.basename(rel) + ".xdelta")
-        subprocess.run([XDELTA, "-e", "-9", "-f", "-B", str(1 << 29), "-s", original, modified, delta], check=True)
-        print(f"{rel}: {os.path.getsize(delta) / 1e6:.2f} MB diff")
+    version_lines = []
+    for name, files in VARIANTS.items():
+        dest = os.path.join(CN, name)
+        os.makedirs(dest)
+        original_dll = files["Assembly-CSharp.dll"][0]
+        version_lines.append(f"{sha1(original_dll)}\t{name}")
+        for filename in FILES:
+            original, patched = files[filename]
+            if not os.path.isfile(original) or not os.path.isfile(patched):
+                raise SystemExit(f"missing {name} {filename}")
+            delta = os.path.join(dest, filename + ".vcdiff")
+            subprocess.run(
+                [XDELTA, "-e", "-9", "-f", "-B", str(1 << 29), "-s", original, patched, delta],
+                check=True,
+            )
+            print(f"{name}/{filename}: {os.path.getsize(delta) / 1e6:.2f} MB")
 
-    for rel, src in {**REPLACED, **ADDED}.items():
-        shutil.copy(src, os.path.join(OUT, "patch", "files", os.path.basename(rel)))
+    utf8_bom(os.path.join(CN, "versions.txt"), "\n".join(version_lines) + "\n")
+    for script in ("apply.ps1", "restore.ps1"):
+        text = open(os.path.join(WORK, "package", script), encoding="utf-8-sig").read()
+        utf8_bom(os.path.join(CN, script), text)
+    for name in ("打补丁.bat", "还原.bat"):
+        text = open(os.path.join(WORK, "package", name), encoding="utf-8").read().replace("\r\n", "\n").replace("\n", "\r\n")
+        with open(os.path.join(OUT, name), "w", encoding="ascii", newline="") as f:
+            f.write(text)
+    shutil.copy(os.path.join(WORK, "package_readme.txt"), os.path.join(OUT, "使用说明.txt"))
 
-    write_install()
-    write_uninstall()
-    shutil.copy(os.path.join(WORK, "package_readme.txt"), os.path.join(OUT, "汉化说明.txt"))
+    check_roundtrip("new", "mainData")
+    check_roundtrip("new", "Assembly-CSharp.dll")
+    check_roundtrip("old", "mainData")
 
     if os.path.exists(ZIP):
         os.remove(ZIP)
@@ -72,94 +106,15 @@ def main():
     print("package:", ZIP, f"{os.path.getsize(ZIP) / 1e6:.2f} MB")
 
 
-def bat_header(title):
-    return [
-        "@echo off",
-        "chcp 65001 >nul",
-        "setlocal EnableExtensions",
-        f"title {title}",
-        'cd /d "%~dp0"',
-        'if not exist "See_No_Evil.exe" (',
-        "  echo 请把本补丁的所有文件解压到游戏根目录（与 See_No_Evil.exe 同一文件夹）后再运行。",
-        "  pause & exit /b 1",
-        ")",
-    ]
-
-
-def write_install():
-    lines = bat_header("See no Evil 汉化补丁 - 安装") + [
-        'if exist "汉化备份\\installed.txt" (',
-        "  echo 汉化补丁已经安装过了。如需重新安装，请先运行“卸载汉化.bat”。",
-        "  pause & exit /b 1",
-        ")",
-        'tasklist /FI "IMAGENAME eq See_No_Evil.exe" | find /I "See_No_Evil.exe" >nul && (',
-        "  echo 请先关闭游戏再安装。",
-        "  pause & exit /b 1",
-        ")",
-        "echo 正在备份原始文件……",
-        'mkdir "汉化备份" 2>nul',
-    ]
-    for rel in list(PATCHED) + list(REPLACED):
-        lines.append(f'if not exist "{win(rel)}" ( echo 找不到 {win(rel)}，游戏文件不完整。 & pause & exit /b 1 )')
-        lines.append(f'copy /y "{win(rel)}" "汉化备份\\{os.path.basename(rel)}" >nul || goto :fail')
-    lines.append("echo 正在应用补丁……")
-    for rel in PATCHED:
-        name = os.path.basename(rel)
-        lines.append(
-            f'"patch\\xdelta3.exe" -d -f -s "{win(rel)}" "patch\\{name}.xdelta" "{win(rel)}.chs" || goto :fail'
-        )
-    for rel in PATCHED:
-        lines.append(f'move /y "{win(rel)}.chs" "{win(rel)}" >nul || goto :fail')
-    for rel in list(REPLACED) + list(ADDED):
-        lines.append(f'copy /y "patch\\files\\{os.path.basename(rel)}" "{win(rel)}" >nul || goto :fail')
-    lines += [
-        'echo installed> "汉化备份\\installed.txt"',
-        "echo.",
-        "echo 汉化安装完成！原始文件已备份到“汉化备份”文件夹，运行“卸载汉化.bat”可还原。",
-        "pause",
-        "exit /b 0",
-        ":fail",
-        "echo.",
-        "echo 安装失败：游戏文件与补丁要求的版本不一致（需要 See no Evil 完整版 Unity 4.1 原版文件）。",
-        "echo 正在还原……",
-    ]
-    for rel in PATCHED:
-        lines.append(f'del /q "{win(rel)}.chs" 2>nul')
-    for rel in list(PATCHED) + list(REPLACED):
-        lines.append(f'if exist "汉化备份\\{os.path.basename(rel)}" copy /y "汉化备份\\{os.path.basename(rel)}" "{win(rel)}" >nul')
-    for rel in ADDED:
-        lines.append(f'del /q "{win(rel)}" 2>nul')
-    lines += ["pause", "exit /b 1"]
-    write_bat("安装汉化.bat", lines)
-
-
-def write_uninstall():
-    lines = bat_header("See no Evil 汉化补丁 - 卸载") + [
-        'if not exist "汉化备份\\installed.txt" (',
-        "  echo 没有找到汉化备份，无法卸载。",
-        "  pause & exit /b 1",
-        ")",
-    ]
-    for rel in list(PATCHED) + list(REPLACED):
-        lines.append(f'copy /y "汉化备份\\{os.path.basename(rel)}" "{win(rel)}" >nul || goto :fail')
-    for rel in ADDED:
-        lines.append(f'del /q "{win(rel)}" 2>nul')
-    lines += [
-        'rmdir /s /q "汉化备份"',
-        "echo 已还原为英文原版。",
-        "pause",
-        "exit /b 0",
-        ":fail",
-        "echo 还原失败，请检查“汉化备份”文件夹是否完整，或确认游戏已关闭。",
-        "pause",
-        "exit /b 1",
-    ]
-    write_bat("卸载汉化.bat", lines)
-
-
-def write_bat(name, lines):
-    with open(os.path.join(OUT, name), "w", encoding="utf-8", newline="\r\n") as f:
-        f.write("\n".join(lines) + "\n")
+def check_roundtrip(variant, filename):
+    original, patched = VARIANTS[variant][filename]
+    delta = os.path.join(CN, variant, filename + ".vcdiff")
+    out = os.path.join(WORK, "build", "_roundtrip_" + filename)
+    subprocess.run([XDELTA, "-d", "-f", "-s", original, delta, out], check=True)
+    if sha1(out) != sha1(patched):
+        raise SystemExit(f"roundtrip mismatch {variant} {filename}")
+    os.remove(out)
+    print(f"roundtrip ok {variant} {filename}")
 
 
 if __name__ == "__main__":

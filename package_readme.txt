@@ -1,20 +1,34 @@
 See no Evil 简体中文汉化补丁
 ================================
 
-本补丁不包含任何游戏本体文件，需要你自己拥有 See no Evil 完整版（Bigfingers.ca 发售，Unity 4.1 版本）。
+本补丁不包含任何游戏本体文件。需要你自己拥有 See no Evil 完整版（Bigfingers.ca 发售的 Unity 4.1 版本，包括现在官网发出的这一版）。
 
 作者授权：已获作者授权，可以公开。
 
 安装方法
 --------
 1. 先关闭游戏。
-2. 把压缩包里 SeeNoEvil_CHS 文件夹中的所有内容复制到游戏根目录（与 See_No_Evil.exe 放在一起）。
-3. 双击运行“安装汉化.bat”。
-   安装前会自动把原始文件备份到“汉化备份”文件夹；如果游戏版本不匹配，会自动还原并提示失败。
+2. 把整个 SeeNoEvil_CHS 文件夹放进游戏根目录，和 See_No_Evil.exe 放在同一层。不要把文件夹里的文件拆出来。放好之后是这样：
+
+   See no Evil\
+     See_No_Evil.exe
+     See_No_Evil_Data\
+     Assets\
+     SeeNoEvil_CHS\
+       打补丁.bat
+       还原.bat
+       使用说明.txt
+       cn_patch\
+
+3. 双击 SeeNoEvil_CHS 里面的「打补丁.bat」。
+
+脚本会认出是以前的完整版，还是现在官网发的完整版，再打上对应的补丁。原版文件备份在 See_No_Evil_Data\SNE_CN_backup。
+
+如果以前装过旧版补丁（游戏根目录里有「安装汉化.bat」），先运行那个「卸载汉化.bat」，再用这个文件夹安装。
 
 卸载方法
 --------
-双击运行游戏根目录中的“卸载汉化.bat”，即可还原为英文原版。
+退出游戏，双击同一个文件夹里的「还原.bat」。
 
 关于文字指令
 ------------
@@ -34,7 +48,7 @@ See no Evil 简体中文汉化补丁
 
 第三方组件
 ----------
-- xdelta3（patch\xdelta3.exe）：Copyright (C) Joshua MacDonald，以 GNU GPL 发布，
+- xdelta3（cn_patch\xdelta3.exe）：Copyright (C) Joshua MacDonald，以 GNU GPL 发布，
   源代码：https://github.com/jmacd/xdelta-gpl
 - 思源黑体 Source Han Sans：Copyright Adobe，SIL Open Font License 1.1
 

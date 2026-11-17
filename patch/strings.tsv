@@ -6,10 +6,16 @@ TextScript	\n -  +\nSFX 	\n -  +\n音效
 TITLE_PAGE_SCRIPT	Fill out LICENSE.TXT to activate this game	请填写 LICENSE.TXT 以激活本游戏
 TITLE_PAGE_SCRIPT	Full Version - Licensed to 	完整版 - 授权给 
 TITLE_PAGE_SCRIPT	Press Enter to Start a New Game \nor use 1-4 to load a saved file	按回车键开始新游戏\n或按 1-4 读取存档
+TITLE_PAGE_SCRIPT	Press Enter to Start a New Game 	按回车键开始新游戏 
+TITLE_PAGE_SCRIPT	or use 1-4 to load a saved file	或按 1-4 读取存档
+TITLE_PAGE_SCRIPT	Thank you for buying See no Evil	感谢购买 See no Evil
 TITLE_PAGE_SCRIPT	SAVE FILE 1 - 	存档 1 - 
 TITLE_PAGE_SCRIPT	\nSAVE FILE 2 - 	\n存档 2 - 
 TITLE_PAGE_SCRIPT	\nSAVE FILE 3 - 	\n存档 3 - 
 TITLE_PAGE_SCRIPT	\nSAVE FILE 4 - 	\n存档 4 - 
+TITLE_PAGE_SCRIPT	SAVE FILE 2 - 	存档 2 - 
+TITLE_PAGE_SCRIPT	SAVE FILE 3 - 	存档 3 - 
+TITLE_PAGE_SCRIPT	SAVE FILE 4 - 	存档 4 - 
 TextLoader	8:I can't find anything called 	8:我在仪式书里找不到任何叫作“
 TextLoader	 in the ritual book.	”的东西。
 TextLoader	4:Right, my 	4:没错，我的 

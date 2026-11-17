@@ -2,7 +2,7 @@
 
 See no Evil（Bigfingers.ca，作者 Geremy Walker）的非官方简体中文补丁。本仓库只有补丁源码和译文，**不包含游戏本体**。
 
-针对的是 Unity **4.1** 的完整版。请在自己合法拥有的副本上使用。
+针对 Unity **4.1** 的完整版，包括旧版需要凭证的版本和现在的免 DRM 完整版。请在自己合法拥有的副本上使用。
 
 ## 作者授权
 
@@ -15,7 +15,7 @@ See no Evil（Bigfingers.ca，作者 Geremy Walker）的非官方简体中文补
 
 ## 安装
 
-玩家用的压缩包不在 git 历史里，挂在 GitHub Release 上。退出游戏后，把压缩包里 `SeeNoEvil_CHS` 文件夹中的**所有内容**复制到游戏根目录，和 `See_No_Evil.exe` 放在一起。不要只丢进一个子文件夹。
+玩家用的压缩包不在 git 历史里，挂在 GitHub Release 上。退出游戏后，把整个 `SeeNoEvil_CHS` 文件夹放进游戏根目录，和 `See_No_Evil.exe` 放在同一层。不要把文件夹里的文件拆出来。
 
 放好之后应该是这样：
 
@@ -24,13 +24,16 @@ See no Evil\
   See_No_Evil.exe
   See_No_Evil_Data\
   Assets\
-  安装汉化.bat
-  卸载汉化.bat
-  汉化说明.txt
-  patch\
+  SeeNoEvil_CHS\
+    打补丁.bat
+    还原.bat
+    使用说明.txt
+    cn_patch\
 ```
 
-然后双击游戏根目录里的 `安装汉化.bat`。脚本会先把原版文件备份到 `汉化备份`。版本对不上时会自动还原。恢复英文原版，退出游戏后双击 `卸载汉化.bat`。
+然后双击 `SeeNoEvil_CHS` 里面的 `打补丁.bat`。脚本按原版 `Assembly-CSharp.dll` 认出是哪一版，再打上对应的差异。原版文件备份在 `See_No_Evil_Data\SNE_CN_backup`。恢复英文原版，退出游戏后双击同一个文件夹里的 `还原.bat`。
+
+已经用旧办法把 `安装汉化.bat` 放到游戏根目录的，先运行那个 `卸载汉化.bat`，再用这个文件夹安装。
 
 对话里用【】括起来的词是可以输入的指令，中文和英文都可以。角色名和咒语保持英文。
 
@@ -54,7 +57,7 @@ See no Evil\
 
 需要 .NET SDK、Python，以及 Python 包 `UnityPy` 和 `Pillow`。`build_font.py`、`build_dll.ps1`、`make_package.py` 和 `apply_scene_text.py` 里的游戏目录是本机路径，换机器要先改。它们读取 `backup/` 里的未打补丁文件，这个备份不进仓库。
 
-玩家包由 `python make_package.py` 生成，输出 `package/SeeNoEvil_汉化补丁.zip`。改过的游戏文件只以 xdelta 差异放进压缩包，新文件只有译好的对白和 `SNE_CN.dll`。
+玩家包由 `python make_package.py` 生成，输出 `package/SeeNoEvil_CN.zip`。里面是 `SeeNoEvil_CHS` 文件夹。两套 xdelta 分别对应旧版和现在的官网版，安装时按原版 DLL 选择。新文件只有译好的对白和 `SNE_CN.dll`。
 
 ## 字体和工具许可
 

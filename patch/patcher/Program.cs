@@ -87,29 +87,48 @@ foreach (var line in File.ReadAllLines(stringsPath))
 	replacements[(cols[0], Unescape(cols[1]))] = Unescape(cols[2]);
 }
 
-var used = new HashSet<(string, string)>();
-foreach (var type in module.Types)
+int replaced = 0;
+foreach (var entry in replacements)
 {
-	foreach (var method in type.Methods.Where(m => m.HasBody))
+	string typeName = entry.Key.Item1;
+	string english = entry.Key.Item2;
+	string chinese = entry.Value;
+	int count = ReplaceLiteral(module, typeName, english, chinese);
+	if (count == 0)
 	{
-		foreach (var ins in method.Body.Instructions.Where(i => i.OpCode == OpCodes.Ldstr))
-		{
-			var key = (type.Name, (string)ins.Operand);
-			if (replacements.TryGetValue(key, out var value))
-			{
-				ins.Operand = value;
-				used.Add(key);
-			}
-		}
+		count = ReplaceLiteral(module, null, english, chinese);
 	}
+	if (count == 0)
+	{
+		Console.WriteLine("skip, not in this build: " + typeName + " " + english.Replace("\n", "\\n"));
+		continue;
+	}
+	replaced += count;
 }
-foreach (var key in replacements.Keys.Where(k => !used.Contains(k)))
-{
-	throw new Exception($"string not found: {key.Item1} {key.Item2}");
-}
-Console.WriteLine($"replaced {used.Count} string literals");
+Console.WriteLine($"replaced {replaced} string literals");
 
 assembly.Write(outputPath);
 Console.WriteLine("wrote " + outputPath);
+
+static int ReplaceLiteral(ModuleDefinition module, string typeName, string english, string chinese)
+{
+	int count = 0;
+	foreach (var type in module.Types)
+	{
+		if (typeName != null && type.Name != typeName)
+		{
+			continue;
+		}
+		foreach (var method in type.Methods.Where(m => m.HasBody))
+		{
+			foreach (var ins in method.Body.Instructions.Where(i => i.OpCode == OpCodes.Ldstr && (string)i.Operand == english))
+			{
+				ins.Operand = chinese;
+				count++;
+			}
+		}
+	}
+	return count;
+}
 
 static string Unescape(string s) => s.Replace("\\n", "\n").Replace("\\t", "\t");

@@ -1,19 +1,17 @@
 """Rebuild the NOVEMBER_BORDER bitmap font (used by every TextMesh) with CJK glyphs.
 
-Usage: python build_font.py <charset.txt> <out_sharedassets0.assets> [preview.png]
+Usage: python build_font.py <source sharedassets0.assets> <charset.txt> <out> [preview.png]
 Original glyphs are copied over untouched; every other character is rendered with
 Source Han Sans, binarized and given the same 2px black outline as the pixel font.
 """
 import sys
 
 import UnityPy
-from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from UnityPy.enums import TextureFormat
 
-SRC = r"e:\T File\SNE_WORK\backup\sharedassets0.assets"
 CJK_FONT = r"e:\T File\SNE_WORK\fonts\SourceHanSansCN-Bold.otf"
-FONT_ID = 97
-TEX_ID = 19
+FONT_NAME = "NOVEMBER_BORDER"
 
 CELL_H = 32
 CJK_PX = 28
@@ -40,15 +38,27 @@ def render_cjk(ch, font):
     return glyph
 
 
-def main(charset_path, out_path, preview_path=None):
+def find_named(env, type_name, asset_name):
+    hits = []
+    for obj in env.objects:
+        if obj.type.name != type_name:
+            continue
+        tree = obj.read_typetree()
+        if tree.get("m_Name") == asset_name:
+            hits.append(obj)
+    if len(hits) != 1:
+        raise SystemExit(f"{type_name} {asset_name}: found {len(hits)}")
+    return hits[0]
+
+
+def main(src_path, charset_path, out_path, preview_path=None):
     with open(charset_path, encoding="utf-8") as f:
         wanted = sorted({c for c in f.read() if ord(c) > 126 and not c.isspace()})
 
-    env = UnityPy.load(SRC)
-    objs = {o.path_id: o for o in env.objects}
-    font_obj = objs[FONT_ID]
+    env = UnityPy.load(src_path)
+    font_obj = find_named(env, "Font", FONT_NAME)
     tree = font_obj.read_typetree()
-    tex = objs[TEX_ID].read()
+    tex = find_named(env, "Texture2D", FONT_NAME).read()
     old_img = tex.image.convert("RGBA")
     ow, oh = old_img.size
 
