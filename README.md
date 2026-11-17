@@ -31,7 +31,7 @@ See no Evil\
     cn_patch\
 ```
 
-然后双击 `SeeNoEvil_CHS` 里面的 `打补丁.bat`。脚本按原版 `Assembly-CSharp.dll` 认出是哪一版，再打上对应的差异。原版文件备份在 `See_No_Evil_Data\SNE_CN_backup`。恢复英文原版，退出游戏后双击同一个文件夹里的 `还原.bat`。
+然后双击 `SeeNoEvil_CHS` 里面的 `打补丁.bat`。脚本按原版 `Assembly-CSharp.dll` 认出是哪一版，再打上对应的差异。原版文件备份在 `See_No_Evil_Data\SNE_CN_backup`。同一脚本会把 `SeeNoEvil中文攻略.txt` 复制到游戏根目录。恢复英文原版，退出游戏后双击同一个文件夹里的 `还原.bat`。
 
 已经用旧办法把 `安装汉化.bat` 放到游戏根目录的，先运行那个 `卸载汉化.bat`，再用这个文件夹安装。
 
@@ -46,7 +46,7 @@ See no Evil\
 | `patch/strings.tsv` | 写进程序的界面字符串。 |
 | `patch/build_dll.ps1`、`patch/make_strings.py` | 编译辅助库并运行补丁器。 |
 | `patch/apply_scene_text.py` | 翻译烘焙在场景里的文字。 |
-| `translation/` | 对白译文和 `STYLE_GUIDE.md`。 |
+| `translation/` | 对白译文、`STYLE_GUIDE.md`，以及官方攻略译文 `SeeNoEvil中文攻略.txt`。 |
 | `build_font.py` | 用思源黑体把中文字形写进原版字体图集。 |
 | `fonts/` | [思源黑体](https://github.com/adobe-fonts/source-han-sans) Source Han Sans，SIL OFL 1.1。 |
 | `make_package.py`、`package_readme.txt` | 生成玩家压缩包。 |

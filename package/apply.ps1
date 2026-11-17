@@ -84,4 +84,5 @@ foreach ($item in $ready) {
 }
 Copy-Item -LiteralPath (Join-Path $here "GENERIC_DIALOGUE.txt") -Destination (Join-Path $game "Assets\TEXT DOCS\GENERIC_DIALOGUE.txt") -Force
 Copy-Item -LiteralPath (Join-Path $here "SNE_CN.dll") -Destination $helper -Force
-Write-Output "补丁已装好。原版文件在 See_No_Evil_Data\SNE_CN_backup。启动游戏即可。"
+Copy-Item -LiteralPath (Join-Path $here "SeeNoEvil中文攻略.txt") -Destination (Join-Path $game "SeeNoEvil中文攻略.txt") -Force
+Write-Output "补丁已装好。原版文件在 See_No_Evil_Data\SNE_CN_backup。中文攻略在游戏根目录。启动游戏即可。"

@@ -64,6 +64,7 @@ def main():
     shutil.copy(XDELTA, os.path.join(CN, "xdelta3.exe"))
     shutil.copy(os.path.join(WORK, "patch", "SNE_CN.dll"), os.path.join(CN, "SNE_CN.dll"))
     shutil.copy(os.path.join(WORK, "build", "GENERIC_DIALOGUE.txt"), os.path.join(CN, "GENERIC_DIALOGUE.txt"))
+    shutil.copy(os.path.join(WORK, "translation", "SeeNoEvil中文攻略.txt"), os.path.join(CN, "SeeNoEvil中文攻略.txt"))
 
     version_lines = []
     for name, files in VARIANTS.items():

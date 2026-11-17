@@ -22,7 +22,7 @@ See no Evil 简体中文汉化补丁
 
 3. 双击 SeeNoEvil_CHS 里面的「打补丁.bat」。
 
-脚本会认出是以前的完整版，还是现在官网发的完整版，再打上对应的补丁。原版文件备份在 See_No_Evil_Data\SNE_CN_backup。
+脚本会认出是以前的完整版，还是现在官网发的完整版，再打上对应的补丁。原版文件备份在 See_No_Evil_Data\SNE_CN_backup。中文攻略会放到游戏根目录，文件名是 SeeNoEvil中文攻略.txt。
 
 如果以前装过旧版补丁（游戏根目录里有「安装汉化.bat」），先运行那个「卸载汉化.bat」，再用这个文件夹安装。
 
